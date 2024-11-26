@@ -1,0 +1,85 @@
+.ctc-info {
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff5fe;
+    margin: 0px 5vw 0px 5vw;
+    border-radius: 5px;
+    /* 可選，圓角效果 */
+
+}
+
+.ctc-bannar img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    /* 使用遮罩實現上方清晰，下方漸淡 */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0) 100%);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+
+    /* 初始透明度 */
+    opacity: 1;
+    transition: mask-image 0.3s ease, opacity 0.3s ease;
+    /* 過渡效果 */
+}
+
+
+.ctc-info-title {
+    text-align: left;
+    font-weight: 900;
+    text-decoration: underline;
+
+}
+
+.ctcinfo-table {
+    font-weight: 500;
+    width: 700px;
+    height: 400px;
+    padding: 40px 80px 40px 80px;
+}
+
+.table-th-title {
+    font-weight: 900;
+    padding: 60px;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.custom-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    /* 表格整體居中 */
+}
+
+.custom-th,
+.custom-td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.custom-th {
+    background-color: #e8dee7;
+    font-weight: bold;
+    text-align: center;
+    /* 標題水平置中 */
+}
+
+.custom-td {
+    text-align: center;
+    /* 水平置中 */
+    vertical-align: middle;
+    /* 垂直置中 */
+}
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+    /* 圖片水平置中 */
+}
